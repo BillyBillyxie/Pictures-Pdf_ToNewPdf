@@ -86,8 +86,9 @@ if __name__ == '__main__':
 
     name_final = 'PDF_4DX.pdf'
     
-    convert_Pic_To_Pdf()
-        
+    if 0 != len(images_list):
+        convert_Pic_To_Pdf()
+    
     GetFileName(pdfpath)
 
     MergePDF(pdfpath, name_final)
